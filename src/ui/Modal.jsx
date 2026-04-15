@@ -90,11 +90,12 @@ function Window({ children, name }) {
         <div>{cloneElement(children, { onCloseModal: close })}</div>
       </StyledModal>
     </Overlay>,
-    document.body
+    document.body,
   );
 }
 
 Modal.Open = Open;
+Modal.Toggle = Open;
 Modal.Window = Window;
 
 export default Modal;
