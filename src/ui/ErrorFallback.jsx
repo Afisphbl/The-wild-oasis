@@ -40,7 +40,7 @@ function ErrorFallback({ error, resetErrorBoundary }) {
         <Box>
           <Heading as="h1">Something went wrong 🧐</Heading>
           <p>{error.message}</p>
-          <Button size="large" onClick={resetErrorBoundary}>
+          <Button variation="primary" size="large" onClick={resetErrorBoundary}>
             Try again
           </Button>
         </Box>

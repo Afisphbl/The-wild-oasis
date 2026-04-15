@@ -34,7 +34,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
             reset();
             onCloseModal?.();
           },
-        }
+        },
       );
     else
       createCabin(
@@ -44,7 +44,7 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
             reset();
             onCloseModal?.();
           },
-        }
+        },
       );
   }
 
@@ -142,12 +142,13 @@ function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
         {/* type is an HTML attribute! */}
         <Button
           variation="secondary"
+          size="medium"
           type="reset"
           onClick={() => onCloseModal?.()}
         >
           Cancel
         </Button>
-        <Button disabled={isWorking}>
+        <Button variation="primary" size="medium" disabled={isWorking}>
           {isEditSession ? "Edit cabin" : "Create new cabin"}
         </Button>
       </FormRow>

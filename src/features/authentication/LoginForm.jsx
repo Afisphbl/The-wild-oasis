@@ -21,7 +21,7 @@ function LoginForm() {
           setEmail("");
           setPassword("");
         },
-      }
+      },
     );
   }
 
@@ -50,7 +50,7 @@ function LoginForm() {
         />
       </FormRowVertical>
       <FormRowVertical>
-        <Button size="large" disabled={isLoading}>
+        <Button variation="primary" size="large" disabled={isLoading}>
           {!isLoading ? "Log in" : <SpinnerMini />}
         </Button>
       </FormRowVertical>
