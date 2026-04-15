@@ -1,9 +1,9 @@
-import BookingTable from "../features/bookings/BookingTable";
-import BookingTableOperations from "../features/bookings/BookingTableOperations";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
+import BookingTable from "../features/bookings/BookingTable";
+import BookingTableOperations from "../features/bookings/BookingTableOperations";
 
-function Booking() {
+function Bookings() {
   return (
     <>
       <Row type="horizontal">
@@ -16,4 +16,4 @@ function Booking() {
   );
 }
 
-export default Booking;
+export default Bookings;

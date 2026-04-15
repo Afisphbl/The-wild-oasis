@@ -33,7 +33,7 @@ function UpdateUserDataForm() {
           setAvatar(null);
           e.target.reset();
         },
-      }
+      },
     );
   }
 
@@ -71,12 +71,15 @@ function UpdateUserDataForm() {
         <Button
           type="reset"
           variation="secondary"
+          size="medium"
           disabled={isUpdating}
           onClick={handleCancel}
         >
           Cancel
         </Button>
-        <Button disabled={isUpdating}>Update account</Button>
+        <Button size="large" variation="primary" disabled={isUpdating}>
+          Update account
+        </Button>
       </FormRow>
     </Form>
   );
